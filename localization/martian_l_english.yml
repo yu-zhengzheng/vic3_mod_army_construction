@@ -1,0 +1,10 @@
+﻿l_english:
+ 
+ modifier_building_output_spaceship_add:0 "deer1"
+ modifier_building_output_spaceship_add_desc:0 "deer2"
+ modifier_building_input_spaceship_add:0 "deer1"
+ modifier_building_input_spaceship_add_desc:0 "deer3"
+
+ pmg_army_construction:0 "Army Construction"
+ pm_no_draft:0 "No Draft"
+ pm_draft:0 "Draft Army For Construction"

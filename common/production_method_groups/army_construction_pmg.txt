@@ -1,0 +1,7 @@
+pmg_army_construction = {
+	texture = "gfx/acpmg.png"
+	production_methods = {
+		pm_no_draft
+		pm_draft
+	}
+}

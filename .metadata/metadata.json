@@ -1,0 +1,12 @@
+{
+  "name" : "Army Construction",
+  "id" : "",
+  "version" : "1.0",
+  "supported_game_version" : "1.7.7",
+  "short_description" : "Allows you to draft army to do construction",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

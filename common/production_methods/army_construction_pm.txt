@@ -1,0 +1,63 @@
+pm_no_draft = {
+	texture = "gfx/mil_factory.dds"
+	#is_default = yes
+}
+
+pm_draft = {
+	texture = "gfx/civ_factory.dds"
+
+	pollution_generation = 0
+
+	building_modifiers = {
+		workforce_scaled = {
+			#1 battalion = 0.1 construction sector
+			goods_input_fabric_add = 2.5
+			goods_input_wood_add = 7.5
+		}
+
+		level_scaled = {
+			#officers acting as bureaucrats
+			#building_employment_officers_add = -25
+			#building_employment_bureaucrats_add = 25
+
+			building_employment_soldiers_add = -500 #extra -50 penalty  #why the fuck is it not called servicemen???
+			building_employment_clerks_add = 50
+			building_employment_laborers_add = 400			
+			building_training_rate_add = -8
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 1
+			building_soldiers_mortality_mult = 0.1 #doesn't work
+			building_servicemen_mortality_mult = 0.1 #doesn't work
+			building_officers_mortality_mult = 0.1 #doesn't work
+			building_clerks_mortality_mult = 0.1 #doesn't work
+			#building_working_conditions_mult = 0.2 #doen't work due to barrack not being manufacturing/mine
+
+			building_training_rate_mult = -0.76
+
+			unit_army_offense_add =-1 #doesn't work
+			unit_offense_add =-1 #doesn't work
+
+			unit_morale_loss_mult = 0.3 #doesn't work
+			unit_morale_damage_mult = -0.1 #doesn't work
+
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_construction_add = 0.15 #only 75% output compared to construction sector
+		}
+	}
+
+	timed_modifiers = {
+	}
+
+	#required_input_goods = fabric #doesn't work because it's fulfilled even when there's a shortage
+	#required_input_goods = wood
+
+	#ai_weight = 1
+}
+
+
